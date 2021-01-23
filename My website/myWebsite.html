@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Welcome to Paradise</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <video autoplay loop class="video-background" muted plays-inline>
+
+            <source src="waves.mp4" type="video/mp4">
+            </video>
+            <img src="dab.png" class="logo">
+            <div class="welcome-msg">
+                <h1>Welcome to paradise</h1>
+                <a href="#" class="btn btn-subscribe">Subscribe</a>
+                <a href="#" class="btn btn-comment">comment</a>
+              
+
+            </div>
+           
+        <div class="music-play">
+            
+            <p> CLick Here To Listen</p> 
+            <img src="play3.png" id="icon">
+            
+            <audio id="mySong">
+                <source src="myJam.mp3" type="audio/mp3">
+            </audio>
+        
+        </div>
+
+
+      
+
+       
+       
+    </div>
+
+   
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(mySong.paused){
+
+                mySong.play();
+                icon.src = "mute3.png";
+            }else{
+                   
+                mySong.pause();
+                icon.src = "play3.png";
+
+            }
+        }
+
+    </script>
+        
+        
+       
+     
+    </body>
+    
+
+</html>
